@@ -6,11 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/2-form.css" />
   </head>
   <body>
     <main>
       <div class="container">
-        <h1 class="main-title">Form</h1>
+        <form class="feedback-form" autocomplete="off">
+          <label class="form-label">
+            Email
+            <input
+              type="email"
+              name="email"
+              autofocus
+              class="form-txt form-txt-input"
+            />
+          </label>
+          <label class="form-label">
+            Message
+            <textarea
+              name="message"
+              rows="8"
+              class="form-txt-area form-txt"
+            ></textarea>
+          </label>
+          <button type="submit" class="form-btn">Submit</button>
+        </form>
         <a class="back-link" href="./index.html">Go back</a>
       </div>
     </main>

@@ -1,0 +1,35 @@
+/* Класс для <ul> */
+.gallery {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+/* Класс для <li> */
+.gallery-item {
+    list-style-type: none;
+    width: 360px;
+    height: 200px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.044);
+    z-index: 1;
+}
+
+/* Класс для <img> */
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Мдальное окно */
+/* .modal-gallery-image {
+    display: block;
+    max-height: calc(100vh - 56px);
+    margin: 28px auto;
+} */
